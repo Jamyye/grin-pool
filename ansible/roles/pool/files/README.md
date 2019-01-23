@@ -9,12 +9,12 @@
 gcloud auth login
 gcloud config set project grinpool-218920 
 gcloud config configurations activate default
-gcloud config set compute/zone us-west1-c
+gcloud config set compute/zone us-east1-c
 ```
 
 ## Create a k8s cluster
 ```
-gcloud container clusters create grinpool  --enable-cloud-logging --disk-size=25G --machine-type=n1-standard-2 --num-nodes=6 --zone us-west1-c  
+gcloud container clusters create grinpool  --enable-cloud-logging --disk-size=25G --machine-type=n1-standard-2 --num-nodes=6 --zone us-east1-c  
 ```
 
 ## Add 3 grin nodes
